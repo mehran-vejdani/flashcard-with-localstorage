@@ -55,13 +55,12 @@ button:hover {
   border-radius: 5px;
   font-family: inherit;
   border: 1px solid lightgray;
-  overflow: hidden;
 }
 .create-box button {
   width: fit-content;
 }
 
-.flashcards {
+.cards {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -71,16 +70,28 @@ button:hover {
   margin-top: 10px;
   padding: 0 10px;
 }
-.flashcards {
+.flashcard {
   width: 370px;
   height: 200px;
   word-wrap: break-word;
   margin: 10px;
   background: white;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  color: black;
 }
-.flashcards h2 {
+.flashcard h2 {
   font-size: 1rem;
+}
+
+.flashcardQuestion {
+  border-top: 1px solid red;
+  padding: 15px;
+  margin-top: 30px;
+}
+.flashcardAnswer {
+  text-align: center;
+  display: none;
+  color: red;
 }
 
 @media (max-width: 768px) {

@@ -10,10 +10,37 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-    />
+    /> -->
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div class="container">
+        <div class="nav">
+          <h1>FlashCards</h1>
+          <div>
+            <button>New Card</button>
+            <button>Del Cards</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <div class="create-box">
+        <h2>create Flashcard</h2>
+        <label for="question">Question</label>
+        <textarea id="question"></textarea>
+        <br />
+        <label for="answer">Question</label>
+        <textarea id="answer"></textarea>
+        <div>
+          <button>Save</button>
+          <button>Close</button>
+        </div>
+      </div>
+      <div class="flashCards"></div>
+    </div>
+  </body>
 </html>
